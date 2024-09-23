@@ -19,6 +19,7 @@
             const originalPlaybackRate = video.playbackRate;
             const originalMutedStatus = video.muted;
             muteAndSpeedUp(video, 5.0)
+            video.currentTime = video.currentTime + 1;
         // const skipButton = document.querySelector(skipButtonSelectors.join(', '));
         // if (skipButton) {
         //     skipButton.click();
